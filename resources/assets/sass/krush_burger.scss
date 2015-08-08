@@ -1,0 +1,35 @@
+$brandColor: #f8a30a;
+$brandColorTransparent: rgba(248,168,10,0.8);
+
+body {
+	&.krush-burger-page {
+		.brand-overlay {
+			background: $brandColorTransparent;
+		}
+
+		header {
+			background: $brandColorTransparent;
+		}
+
+		.swiper-custom-nav {
+			ul {
+				li {
+					&.swiper-pagination-switch {
+						&.active {
+							border-bottom: 2px solid $brandColor;
+						}
+					}
+
+				}
+			}
+		}
+
+		.parallax {
+			.content {
+				.logo-inquire {
+					background: $brandColor;
+				}
+			}
+		}
+	}
+}

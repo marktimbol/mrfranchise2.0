@@ -1,0 +1,35 @@
+$brandColor: #254633;
+$brandColorTransparent: rgba(37,70,51,0.8);
+
+body {
+	&.queens-chips-page {
+		.brand-overlay {
+			background: $brandColorTransparent;
+		}
+
+		header {
+			background: $brandColorTransparent;
+		}
+
+		.swiper-custom-nav {
+			ul {
+				li {
+					&.swiper-pagination-switch {
+						&.active {
+							border-bottom: 2px solid $brandColor;
+						}
+					}
+
+				}
+			}
+		}
+
+		.parallax {
+			.content {
+				.logo-inquire {
+					background: $brandColor;
+				}
+			}
+		}
+	}
+}
