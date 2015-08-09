@@ -62,7 +62,14 @@
 
 							<ul class="brands">
 								<?php
-								$thumbs = ['als-beef.png', 'french-fry-heaven.png', 'krush-burger.png', 'lobster-joint.png', 'nancy-pizza.png', 'queens-chips.jpg'];
+								$thumbs = array(
+									'als-beef.png',
+									'french-fry-heaven.png',
+									'krush-burger.png',
+									'lobster-joint.png',
+									'nancy-pizza.png',
+									'queens-chips.jpg'
+								);
 
 								foreach( $thumbs as $thumb) { ?>
 								<li class="col-md-2">
