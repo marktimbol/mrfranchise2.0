@@ -35,13 +35,35 @@
 					<div class="col-md-12">
 						<h2>About Mr. Franchise</h2>
 
-						<p class="lead">
-							Mr. Frnanchise is Canada's most historic and largest full service restaurant companies and owns many of Canada’s most recognizable and favourite restaurant concepts including: Swiss Chalet, East Side Mario's, Milestones, Casey's, Bier Markt, Kelsey’s, Montana's, Fionn MacCool's, and Harvey’s. Mr. Franchise has system wide sales of approximately $1.7 billion and over 840 restaurant locations across Canada. Mr. 
-							Franchise size and scale provide franchisees with a competitive advantage as it relates to: purchasing, real estate, construction, marketing, and information technology. Leveraging these services provides franchisees with superior added value and support to help increase the bottom line.
-						</p>
+						<div class="row">
+							<?php
+							$photos = array(
+								'Karim_El_Ghazl.jpg',
+								'Jim_Underwood.jpg',
+								'Paul_Fuller.jpg',
+								'Sara_Mahdi.jpg'
+								);
+							
+							foreach( $photos as $photo ) {
+							?>
 
+								<div class="col-md-3">
+									<img src="public/images/<?=$photo?>" alt="" title="" class="img-responsive" />
+								</div>	
+
+							<?php } ?>	
+						</div>	
+
+						<p>&nbsp;</p>															
+
+						<p class="lead">
+							Mr. Franchise is a full service franchise brokerage firm. We are proud to have established a unique presence in the franchising sector in that all our affiliated brokers are not only trained and experienced franchise brokers, but also franchise and/or business owners themselves. When clients pose questions regarding franchising our answers are derived not only from classroom training but from real world experience. We have found that real life rarely co-operates with textbook business examples!
+						</p>
+						<p class="lead">
+							We currently hold relationships with over 500 of the Nations leading franchise brands. Our expansive portfolio provides our franchise buyer clients with a much broader and varied pool of franchises to research. Having more choices means our clients can choose the most appropriate franchise based on their background, skills and goals – rather than having to compromise.
+						</p>
 						<div>
-							<a href="#" class="btn btn-clear" data-toggle="modal" data-target="#inquireModalForm">Contact Us</a>
+							<a href="contact-us.php" class="btn btn-clear">Contact Us</a>
 						</div>
 					</div>
 				</div>

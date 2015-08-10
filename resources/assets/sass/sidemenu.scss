@@ -5,6 +5,9 @@
 	z-index:99999;
 	width: 7.8em;
 	height: 100%;
+	margin-top: -20px;
+
+	//brands
 	.menu-cell {
 		background:#000; 
 		background:rgba(0,0,0,0.5); 
@@ -27,6 +30,13 @@
 			top:0; 
 			display:inline-block; 
 			vertical-align:middle;
+		}
+
+		h3 {
+			color: white;
+			font-size: 15px;
+			top: 20px;
+			position: relative;			
 		}
 	}
 

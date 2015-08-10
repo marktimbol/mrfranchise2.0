@@ -4,6 +4,10 @@ jQuery(document).ready(function () {
         $(this).toggleClass('active');
     });
 
+     $(".owl-carousel").owlCarousel({
+        items: 6
+     });   
+
     winW = $(document).width();
     winH = $(window).height();
     

@@ -138,6 +138,8 @@ form.signup input.form-control:focus {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    margin-top: 50px;
 }
 
 
@@ -171,3 +173,7 @@ p.copyright {
 	color: #fff;
 	text-align: center;
 }	
+
+footer {
+  margin-top: 50px;
+}

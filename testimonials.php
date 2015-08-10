@@ -36,7 +36,7 @@
 						<h2>Testimonials</h2>
 
 						<p class="lead">
-							Content required
+							Coming soon.
 						</p>
 					</div>
 				</div>

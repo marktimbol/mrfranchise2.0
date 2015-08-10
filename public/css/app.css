@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'AdonisBold';
+  src: url("../fonts/adonisc-bold-webfont.eot");
+  src: url("../fonts/adonisc-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/adonisc-bold-webfont.woff2") format("woff2"), url("../fonts/adonisc-bold-webfont.woff") format("woff"), url("../fonts/adonisc-bold-webfont.ttf") format("truetype"), url("../fonts/adonisc-bold-webfont.svg#adoniscbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -22,18 +29,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 40px; }
 
 .btn {
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background: none;
-  cursor: pointer;
   padding: 15px 30px;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
-  outline: none;
   position: relative;
   border-radius: 0px !important;
   -webkit-transition: all 0.3s;
@@ -48,7 +48,8 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s; }
   .btn.btn-clear {
     border: 3px solid #fff;
-    color: #fff; }
+    color: #fff;
+    background: none; }
     .btn.btn-clear::after {
       width: 0%;
       height: 100%;
@@ -70,7 +71,8 @@ h1, h2, h3, h4, h5, h6 {
   top: 0px;
   z-index: 99999;
   width: 7.8em;
-  height: 100%; }
+  height: 100%;
+  margin-top: -20px; }
   .rightside-menu .menu-cell {
     background: #000;
     background: rgba(0, 0, 0, 0.5);
@@ -91,6 +93,11 @@ h1, h2, h3, h4, h5, h6 {
       top: 0;
       display: inline-block;
       vertical-align: middle; }
+    .rightside-menu .menu-cell h3 {
+      color: white;
+      font-size: 15px;
+      top: 20px;
+      position: relative; }
   .rightside-menu .rightside-popups {
     position: absolute;
     height: 100%;
@@ -230,6 +237,12 @@ nav.primary {
           color: white;
           text-decoration: underline; }
 
+form label {
+  color: white; }
+
+.modal form label {
+  color: #333; }
+
 header {
   background: url("../images/header-shadow.png") repeat-x;
   position: absolute;
@@ -261,35 +274,35 @@ header {
 .page-content {
   width: 100%;
   background-size: cover;
-  background: url("../images/featured-opportunities.jpg") 50% 0% no-repeat; }
+  background: url("../images/local-woman.jpg") 50% 0% no-repeat; }
 
 #featuredOpportunities {
   width: 100%;
   background-size: cover;
-  background: url("../images/featured-opportunities.jpg") 50% 0% no-repeat; }
+  background: url("../images/featured-opportunities.jpg") 0% 0% no-repeat; }
   #featuredOpportunities ul.brands {
     list-style: none; }
-    #featuredOpportunities ul.brands li figure.brand img {
-      padding: 30px; }
-    #featuredOpportunities ul.brands li figure.brand .inquiry {
-      display: none; }
-    #featuredOpportunities ul.brands li figure.brand .info {
-      display: block; }
-    #featuredOpportunities ul.brands li figure.brand.active figcaption .inquiry {
-      display: block; }
-    #featuredOpportunities ul.brands li figure.brand.active figcaption .info {
-      display: none; }
+    #featuredOpportunities ul.brands li figure.brand {
+      text-align: center; }
+      #featuredOpportunities ul.brands li figure.brand img {
+        padding: 30px; }
+      #featuredOpportunities ul.brands li figure.brand .inquiry {
+        display: none; }
+      #featuredOpportunities ul.brands li figure.brand .info {
+        display: block; }
+      #featuredOpportunities ul.brands li figure.brand.active figcaption .inquiry {
+        display: block; }
+      #featuredOpportunities ul.brands li figure.brand.active figcaption .info {
+        display: none; }
 
 #ourBrands {
   width: 100%;
   background-size: cover;
-  background: url("../images/temp/our-brands-bg.jpg") 50% 0% no-repeat; }
+  background: url("../images/franchise-opportunity-bg.jpg") 0% 80% no-repeat; }
   #ourBrands ul {
     list-style: none; }
     #ourBrands ul.brands {
-      overflow: hidden;
-      background: #ececec;
-      padding: 20px; }
+      overflow: hidden; }
       #ourBrands ul.brands li figure.brand figcaption h4 {
         text-align: center;
         color: #333; }
@@ -299,6 +312,12 @@ header {
   background-size: cover;
   background: url("../images/featured-opportunities.jpg") 0 10% no-repeat; }
 
+.light-background h2, .light-background p {
+  color: #333 !important; }
+
+.light-background .btn {
+  color: #333; }
+
 .overlay {
   background: url("../images/overlay.png") repeat;
   position: absolute;
@@ -306,6 +325,9 @@ header {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.panel p {
+  color: #333; }
 
 footer {
   background: #333;
@@ -316,6 +338,24 @@ footer {
 
 .mobile-only {
   display: none; }
+
+.panel-title {
+  font-size: 18px; }
+
+.owl-carousel li {
+  text-align: center; }
+
+#cd-timeline .cd-timeline-block .cd-timeline-content h2 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 0; }
+
+#cd-timeline .cd-timeline-block .cd-timeline-content p {
+  font-size: 16px;
+  color: #333; }
+
+#cd-timeline .cd-timeline-block .cd-timeline-content .cd-date {
+  color: white; }
 
 @media only screen and (max-width: 40em) {
   .callout-message h2, .callout-message h3 {
@@ -395,7 +435,7 @@ body.brand-page {
   body.brand-page .swiper-container {
     position: relative; }
     body.brand-page .swiper-container .swiper-wrapper .swiper-slide .swiper-content {
-      top: 37%;
+      top: 33%;
       left: 8%; }
       body.brand-page .swiper-container .swiper-wrapper .swiper-slide .swiper-content p {
         color: white; }
@@ -429,6 +469,7 @@ body.brand-page {
             body.brand-page .swiper-container .swiper-custom-nav ul li.swiper-pagination-switch a:hover {
               text-decoration: none; }
           body.brand-page .swiper-container .swiper-custom-nav ul li.swiper-pagination-switch.active {
+            border-bottom: 2px solid white;
             padding-bottom: 5px; }
             body.brand-page .swiper-container .swiper-custom-nav ul li.swiper-pagination-switch.active a {
               color: white; }
@@ -453,11 +494,14 @@ body.als-beef-page .brand-overlay {
 body.als-beef-page header {
   background: rgba(255, 242, 0, 0.8); }
 
-body.als-beef-page .swiper-custom-nav ul li.swiper-pagination-switch.active {
-  border-bottom: 2px solid #fff200; }
-
 body.als-beef-page .parallax .content .logo-inquire {
   background: #fff200; }
+
+.cd-timeline-img.als-beef {
+  background: #fff200; }
+
+.rightside-menu a.als-beef {
+  background: rgba(255, 242, 0, 0.8); }
 
 body.queens-chips-page .brand-overlay {
   background: rgba(37, 70, 51, 0.8); }
@@ -465,11 +509,14 @@ body.queens-chips-page .brand-overlay {
 body.queens-chips-page header {
   background: rgba(37, 70, 51, 0.8); }
 
-body.queens-chips-page .swiper-custom-nav ul li.swiper-pagination-switch.active {
-  border-bottom: 2px solid #254633; }
-
 body.queens-chips-page .parallax .content .logo-inquire {
   background: #254633; }
+
+.cd-timeline-img.queens-chips {
+  background: #254633; }
+
+.rightside-menu a.queens-chips {
+  background: rgba(37, 70, 51, 0.8); }
 
 body.krush-burger-page .brand-overlay {
   background: rgba(248, 168, 10, 0.8); }
@@ -477,11 +524,14 @@ body.krush-burger-page .brand-overlay {
 body.krush-burger-page header {
   background: rgba(248, 168, 10, 0.8); }
 
-body.krush-burger-page .swiper-custom-nav ul li.swiper-pagination-switch.active {
-  border-bottom: 2px solid #f8a30a; }
-
 body.krush-burger-page .parallax .content .logo-inquire {
   background: #f8a30a; }
+
+.cd-timeline-img.krush-burger {
+  background: #f8a30a; }
+
+.rightside-menu a.krush-burger {
+  background: rgba(248, 168, 10, 0.8); }
 
 body.nancy-pizza-page .brand-overlay {
   background: rgba(35, 31, 32, 0.8); }
@@ -489,20 +539,17 @@ body.nancy-pizza-page .brand-overlay {
 body.nancy-pizza-page header {
   background: rgba(35, 31, 32, 0.8); }
 
-body.nancy-pizza-page .swiper-custom-nav ul li.swiper-pagination-switch.active {
-  border-bottom: 2px solid #231f20; }
-
 body.nancy-pizza-page .parallax .content .logo-inquire {
   background: #231f20; }
+
+.rightside-menu a.nancy-pizza {
+  background: rgba(35, 31, 32, 0.8); }
 
 body.lobster-joint-page .brand-overlay {
   background: rgba(237, 30, 36, 0.8); }
 
 body.lobster-joint-page header {
   background: rgba(237, 30, 36, 0.8); }
-
-body.lobster-joint-page .swiper-custom-nav ul li.swiper-pagination-switch.active {
-  border-bottom: 2px solid #ed1e24; }
 
 body.lobster-joint-page .parallax .content .logo-inquire {
   background: #ed1e24; }
@@ -513,11 +560,42 @@ body.french-fry-heaven-page .brand-overlay {
 body.french-fry-heaven-page header {
   background: rgba(3, 134, 178, 0.8); }
 
-body.french-fry-heaven-page .swiper-custom-nav ul li.swiper-pagination-switch.active {
-  border-bottom: 2px solid #0386b2; }
-
 body.french-fry-heaven-page .parallax .content .logo-inquire {
   background: #0386b2; }
 
+.cd-timeline-img.french-fry-heaven {
+  background: #0386b2; }
+
+.rightside-menu a.french-fry-heaven {
+  background: rgba(3, 134, 178, 0.8); }
+
+body.max-burger-page .brand-overlay {
+  background: rgba(239, 34, 39, 0.8); }
+
+body.max-burger-page header {
+  background: rgba(239, 34, 39, 0.8); }
+
+body.max-burger-page .parallax .content .logo-inquire {
+  background: #ef2227; }
+
+.rightside-menu a.max-burger {
+  background: rgba(239, 34, 39, 0.8); }
+
+body.backyard-burger-page .brand-overlay {
+  background: rgba(35, 31, 32, 0.8); }
+
+body.backyard-burger-page header {
+  background: rgba(35, 31, 32, 0.8); }
+
+body.backyard-burger-page .parallax .content .logo-inquire {
+  background: #231f20; }
+
+.rightside-menu a.backyard-burger {
+  background: rgba(35, 31, 32, 0.8); }
+
 .page-default .page-content {
   padding-top: 150px; }
+  .page-default .page-content .container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-right: 113px; }

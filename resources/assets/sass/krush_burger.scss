@@ -10,26 +10,25 @@ body {
 		header {
 			background: $brandColorTransparent;
 		}
-
-		.swiper-custom-nav {
-			ul {
-				li {
-					&.swiper-pagination-switch {
-						&.active {
-							border-bottom: 2px solid $brandColor;
-						}
-					}
-
-				}
-			}
-		}
-
+		
 		.parallax {
 			.content {
 				.logo-inquire {
 					background: $brandColor;
 				}
 			}
+		}
+	}
+}
+
+.cd-timeline-img.krush-burger {
+	background: $brandColor;
+}
+
+.rightside-menu {
+	a {
+		&.krush-burger {
+			background: $brandColorTransparent;
 		}
 	}
 }

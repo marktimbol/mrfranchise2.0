@@ -9,9 +9,8 @@
 
 <nav class="primary">
 	<ul>
-		<li><a href="investment-options.php">Investment Options</a></li>
-		<li><a href="faq.php">FAQs</a></li>
-		<li><a href="testimonials.php">Testimonials</a></li>
-		<li><a href="about-us.php">About Us</a></li>																																			
+		<li><a href="franchising-process.php">Franchising Process</a></li>
+		<li><a href="about-us.php">About Us</a></li>	
+		<li><a href="faq.php">FAQs</a></li>																																		
 	</ul>
 </nav>

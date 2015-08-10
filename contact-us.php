@@ -32,7 +32,7 @@
 		<div class="page-content parallax dark">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-6">
 						<h2>Contact Us</h2>
 						<p class="lead">Still have questions? Let's talk</p>
 

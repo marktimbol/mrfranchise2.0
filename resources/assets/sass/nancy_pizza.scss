@@ -11,18 +11,6 @@ body {
 			background: $brandColorTransparent;
 		}
 
-		.swiper-custom-nav {
-			ul {
-				li {
-					&.swiper-pagination-switch {
-						&.active {
-							border-bottom: 2px solid $brandColor;
-						}
-					}
-
-				}
-			}
-		}
 
 		.parallax {
 			.content {
@@ -30,6 +18,14 @@ body {
 					background: $brandColor;
 				}
 			}
+		}
+	}
+}
+
+.rightside-menu {
+	a {
+		&.nancy-pizza {
+			background: $brandColorTransparent;
 		}
 	}
 }

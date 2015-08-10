@@ -12,9 +12,12 @@
 		<link rel="stylesheet" href="public/css/normalize.css" />
 		<link rel="stylesheet" href="public/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="public/css/bootstrap.min.css">
-		<link rel="stylesheet" href="public/css/app.css" />
 		<link rel="stylesheet" href="public/css/swiper.css" />
-		
+		<link rel="stylesheet" href="public/css/timeline.css" />
+		<link rel="stylesheet" href="public/css/owl.carousel.css">
+		<link rel="stylesheet" href="public/css/owl.theme.css">
+		<link rel="stylesheet" href="public/css/app.css" />
+
 		<link rel="stylesheet" href="style.css" />	
 		<script src="public/js/vendor/modernizr.js"></script>
 	

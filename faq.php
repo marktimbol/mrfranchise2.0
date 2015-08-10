@@ -37,55 +37,39 @@
 						<p class="lead">
 							With over 800 units across the country and hundreds of Franchisees there are some frequently asked questions that should help guide you through this process.
 						</p>
+						<?php
+							$faqs = [
+								'How long will it take to be approved and open a new Franchise?' => 'The application process from the date of your initial inquiry to approval by our executive team can vary depending on a number of factors (such as strength of the franchisee’s application and availability of real estate) but is typically a two to eight week process. We will work with you to determine together whether this is the right opportunity for you. Once approved by our executive team, depending on the real estate status you will be eight to sixteen months away from opening your doors.',
+								'How much money will I make?' => 'Your return on investment depends on many variables such as market size, lease terms, market demographics and most importantly your hard work. A key component in our franchising process is due diligence. During due diligence you will be put in contact with members of our franchise community in an effort to better understand all aspects of running a franchised business, including whether or not this will meet your financial expectations.',
+								'How do I know if I am qualified?' => 'Restaurant experience, although a definite asset, is not mandatory – instead we look for franchisees who are passionate about the brand and about delivering a perfect guest experience. Beyond that we want people with strong leadership skills, community ties, and a drive to control their own destiny.',
+								'Are there existing restaurants for sale? What is the process of buying one?' => 'There are always times when existing franchisees are ready for a new challenge and may entertain selling their business. The initial process for securing a new restaurant or completing the transfer of an existing location is exactly the same. We ask that candidates first submit their applications to the Franchising Team and we will help you through the franchising process. Once screened by the Franchising Team, we will help you determine the best opportunity for you.',
+							];
 
+							$collapseId = 1;
+						?>
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-						  <div class="panel panel-default">
-						    <div class="panel-heading" role="tab" id="headingOne">
-						      <h4 class="panel-title">
-						        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						          Collapsible Group Item #1
-						        </a>
-						      </h4>
-						    </div>
-						    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-						      <div class="panel-body">
-						        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-						      </div>
-						    </div>
-						  </div>
-						  <div class="panel panel-default">
-						    <div class="panel-heading" role="tab" id="headingTwo">
-						      <h4 class="panel-title">
-						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						          Collapsible Group Item #2
-						        </a>
-						      </h4>
-						    </div>
-						    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-						      <div class="panel-body">
-						        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-						      </div>
-						    </div>
-						  </div>
-						  <div class="panel panel-default">
-						    <div class="panel-heading" role="tab" id="headingThree">
-						      <h4 class="panel-title">
-						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						          Collapsible Group Item #3
-						        </a>
-						      </h4>
-						    </div>
-						    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-						      <div class="panel-body">
-						        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-						      </div>
-						    </div>
-						  </div>
+							<div class="panel panel-default">
+								<?php foreach($faqs as $question => $answer) { ?>
+								<div class="panel-heading" role="tab" id="heading<?=$collapseId?>">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?=$collapseId?>" aria-expanded="true" aria-controls="collapse<?=$collapseId?>">
+											<?=$question?>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse<?=$collapseId?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?=$collapseId?>">
+									<div class="panel-body">
+										<p>
+											<?=$answer?>
+										</p>	
+									</div>
+								</div>
+								<?php 
+									$collapseId++;
+								} ?>
+							</div>
 						</div>
-
-						<p>
-							<a href="#" class="btn btn-clear" data-toggle="modal" data-target="#inquireFormModal">Inquire Now</a>
-						</p>
+						 
 					</div>
 				</div>
 			</div>

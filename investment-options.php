@@ -36,7 +36,8 @@
 						<h2>Investment Options</h2>
 
 						<p class="lead">
-							Content required
+							At Mr. Franchise Operations we realize that different markets require different sized restaurants.<br />
+							Depending on the population size of your market we'll work with you to find an opportunity that suits your needs.
 						</p>
 					</div>
 				</div>

@@ -5,27 +5,29 @@
 						<div class="content">
 							<h2>Our Brands</h2>
 							<p>&nbsp;</p>
-
-							<ul class="brands">
-								<?php
-								$thumbs = array(
-									'als-beef.png',
-									'french-fry-heaven.png',
-									'krush-burger.png',
-									'lobster-joint.png',
-									'nancy-pizza.png',
-									'queens-chips.jpg'
-								);								
-								foreach( $thumbs as $thumb ) { ?>
-								<li class="col-md-2">
-									<figure class="brand">
-										<a href="<?=str_replace(['.png', '.jpg'], '.php', $thumb); ?>">
-											<img src="public/images/thumbs/<?=$thumb?>" alt="" title="" class="img-responsive" />
-										</a>
-									</figure>
+							<?php
+							$thumbs = array(
+								'als-beef.png',
+								'french-fry-heaven.png',
+								'krush-burger.png',
+								//'lobster-joint.png',
+								'nancy-pizza.png',
+								'queens-chips.jpg',
+								'backyard-burger.png'
+								//'max-burger.png'
+							);
+							?>
+							<ul class="brands owl-carousel">
+								<?php foreach($thumbs as $thumb) { ?>
+								<li>
+									<a href="<?=str_replace(['.png', '.jpg'], '.php', $thumb)?>">
+										<img src="public/images/thumbs/<?=$thumb?>" alt="" title="" />
+									</a>
 								</li>
 								<?php } ?>
-							</ul>	
+								<li>
+							</ul>
+														
 
 							<div class="clearfix"></div>
 
@@ -62,36 +64,45 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<h4 class="modal-title" id="myModalLabel">Inquire here</h4>
 					</div>
-					<div class="modal-body">
-						<p class="">
-						Are you ready to take the next step and get started? Please fill out our online inquiry form to receive a welcome email which includes an information package and Mr. Franchise Application for your review.
-						</p>
-						<p class="">
-						Now that you have familiarized yourself with Mr. Franchise Franchising and believe a Mr. Franchise is right for you please complete our online inquiry form.
-						</p>
-						<form method="POST">
+					<form method="POST" action="mail.php">
+						<div class="modal-body">
+							<p class="">
+							Are you ready to take the next step and get started? Please fill out our online inquiry form to receive a welcome email which includes an information package and Mr. Franchise Application for your review.
+							</p>
+							<p class="">
+							Now that you have familiarized yourself with Mr. Franchise Franchising and believe a Mr. Franchise is right for you please complete our online inquiry form.
+							</p>
+
                             <div class="form-group">
                             	<label for="name">Name</label>
-                            	<input type="text" id="name" name="name" placeholder="Name" class="form-control">
+                            	<input type="text" id="name" name="name" placeholder="Name" class="form-control" required>
                             </div>
                        		<div class="form-group">
                        			<label for="email">eMail</label>
-                            	<input type="email" id="email" name="email" placeholder="eMail" class="form-control">
+                            	<input type="email" id="email" name="email" placeholder="eMail" class="form-control" required>
                             </div>	
                        		<div class="form-group">
                        			<label for="phone">Phone</label>
-                            	<input type="text" id="phone" name="phone" placeholder="Phone" class="form-control">
+                            	<input type="text" id="phone" name="phone" placeholder="Phone" class="form-control" required>
                             </div>	
-
-                           <div class="form-group">
-                            	<button type="submit" name="submit" class="btn btn-clear btn-sm">Inquire Now</button>
-                            </div>
-                        </form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Send Inquiry</button>
-					</div>
+                       		<div class="form-group">
+                       			<label for="phone">I am interested in the following Market:</label>
+                       			<select name="country" class="form-control" required>
+									<?php
+									$countries = array("Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegowina", "Botswana", "Bouvet Island", "Brazil", "British Indian Ocean Territory", "Brunei Darussalam", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Cayman Islands", "Central African Republic", "Chad", "Chile", "China", "Christmas Island", "Cocos (Keeling) Islands", "Colombia", "Comoros", "Congo", "Congo, the Democratic Republic of the", "Cook Islands", "Costa Rica", "Cote d'Ivoire", "Croatia (Hrvatska)", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Falkland Islands (Malvinas)", "Faroe Islands", "Fiji", "Finland", "France", "France Metropolitan", "French Guiana", "French Polynesia", "French Southern Territories", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Gibraltar", "Greece", "Greenland", "Grenada", "Guadeloupe", "Guam", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Heard and Mc Donald Islands", "Holy See (Vatican City State)", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran (Islamic Republic of)", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, Democratic People's Republic of", "Korea, Republic of", "Kuwait", "Kyrgyzstan", "Lao, People's Democratic Republic", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libyan Arab Jamahiriya", "Liechtenstein", "Lithuania", "Luxembourg", "Macau", "Macedonia, The Former Yugoslav Republic of", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Martinique", "Mauritania", "Mauritius", "Mayotte", "Mexico", "Micronesia, Federated States of", "Moldova, Republic of", "Monaco", "Mongolia", "Montserrat", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "Netherlands Antilles", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Niue", "Norfolk Island", "Northern Mariana Islands", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Pitcairn", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romania", "Russian Federation", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Seychelles", "Sierra Leone", "Singapore", "Slovakia (Slovak Republic)", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Georgia and the South Sandwich Islands", "Spain", "Sri Lanka", "St. Helena", "St. Pierre and Miquelon", "Sudan", "Suriname", "Svalbard and Jan Mayen Islands", "Swaziland", "Sweden", "Switzerland", "Syrian Arab Republic", "Taiwan, Province of China", "Tajikistan", "Tanzania, United Republic of", "Thailand", "Togo", "Tokelau", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks and Caicos Islands", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "United States Minor Outlying Islands", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Virgin Islands (British)", "Virgin Islands (U.S.)", "Wallis and Futuna Islands", "Western Sahara", "Yemen", "Yugoslavia", "Zambia", "Zimbabwe");
+									echo '<option value=""></option>';
+									foreach($countries as $country) {
+										echo '<option value="'.$country.'">'.$country.'</option>';
+									}
+									?>                       	
+                       			</select>
+                            </div>	
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<input type="submit" name="submit" class="btn btn-default" value="Send Inquiry" />
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -99,9 +110,9 @@
 		<script src="public/js/vendor/jquery.js"></script>
 		<script src="public/js/vendor/bootstrap.min.js"></script>
 		<script src="public/js/vendor/swiper.js"></script>
-		
+		<script src="public/js/vendor/owl.carousel.js"></script>
+		<script src="public/js/vendor/timeline.js"></script>	
 		<script src="public/js/app.js"></script>	
-
 	
 	</body>
 </html>
