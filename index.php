@@ -47,6 +47,8 @@
  			<div class="swiper-button-next"></div>
 			<div class="swiper-button-prev"></div> -->
 		</div>
+
+		<?php include('brands-carousel.php'); ?>	
 	
 
 		<div id="featuredOpportunities" class="parallax dark">

@@ -1,5 +1,5 @@
 <?php
-$to = "mark@glocalguys.com";
+$to = "hello@glocalguys.com";
 $subject = "Mr. Franchise Inquiry";
 
 $message = "
@@ -8,20 +8,20 @@ $message = "
 		<title>Mr. Franchise Inquiry</title>
 	</head>
 	<body>
-		<table>
-			<tr>
-				<th>Name</th>
-				<th>Email</th>
-				<th>Phone</th>
-				<th>Interested in Market</th>
-			</tr>
-			<tr>
-				<td>".$_POST['name']."</td>
-				<td>".$_POST['email']."</td>
-				<td>".$_POST['phone']."</td>
-				<td>".$_POST['country']."</td>
-			</tr>
-		</table>
+		<h3>Inquiry from the website</h3>
+
+		<p><strong>Name:</strong><br />
+			".$_POST['name']."
+		</p>
+		<p><strong>Email:</strong><br />
+			".$_POST['email']."
+		</p>
+		<p><strong>Phone:</strong><br />
+			".$_POST['phone']."
+		</p>
+			<p><strong>Interested in Market:</strong><br />
+			".$_POST['country']."
+		</p>					
 	</body>
 </html>
 ";

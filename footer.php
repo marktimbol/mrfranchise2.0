@@ -3,8 +3,8 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="content">
-							<h2>Our Brands</h2>
-							<p>&nbsp;</p>
+							<!-- <h2>Our Brands</h2>
+							<p>&nbsp;</p> -->
 							<?php
 							$thumbs = array(
 								'als-beef.png',
@@ -20,7 +20,7 @@
 							<ul class="brands owl-carousel">
 								<?php foreach($thumbs as $thumb) { ?>
 								<li>
-									<a href="<?=str_replace(['.png', '.jpg'], '.php', $thumb)?>">
+									<a href="<?=str_replace(array('.jpg','.png'), '.php', $thumb)?>">
 										<img src="public/images/thumbs/<?=$thumb?>" alt="" title="" />
 									</a>
 								</li>
@@ -66,11 +66,9 @@
 					</div>
 					<form method="POST" action="mail.php">
 						<div class="modal-body">
+
 							<p class="">
-							Are you ready to take the next step and get started? Please fill out our online inquiry form to receive a welcome email which includes an information package and Mr. Franchise Application for your review.
-							</p>
-							<p class="">
-							Now that you have familiarized yourself with Mr. Franchise Franchising and believe a Mr. Franchise is right for you please complete our online inquiry form.
+							Now that you have familiarized yourself with Mr. Franchise Franchising and believe a Mr. Franchise is right for you please complete our online inquiry form and one of our representative will contact you shortly.
 							</p>
 
                             <div class="form-group">
@@ -105,14 +103,9 @@
 					</form>
 				</div>
 			</div>
-		</div>
+		</div>	
 
-		<script src="public/js/vendor/jquery.js"></script>
-		<script src="public/js/vendor/bootstrap.min.js"></script>
-		<script src="public/js/vendor/swiper.js"></script>
-		<script src="public/js/vendor/owl.carousel.js"></script>
-		<script src="public/js/vendor/timeline.js"></script>	
-		<script src="public/js/app.js"></script>	
+		<script src="public/js/all.js"></script>	
 	
 	</body>
 </html>

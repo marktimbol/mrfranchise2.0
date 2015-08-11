@@ -6,7 +6,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="col-md-1">
+						<div class="col-md-1 col-xs-2">
 							<h1>
 								<a href="index.php">
 									<img src="public/images/thumbs/french-fry-heaven.png" alt="" title="" />
@@ -14,7 +14,7 @@
 							</h1>
 						</div>
 
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-3">
 							<h2>Franchising</h2>
 						</div>
 
@@ -40,19 +40,21 @@
 					<img src="public/images/ffh/slide2.jpg" />
 
 					<div class="swiper-content">	
-						<div class="col-md-10">
-							<p class="lead">
-							We are always looking to expand.<br />
-							Right now we're excited about - but not limited to - opportunities in these exciting locations!
-							</p>
-	                        <ul>
-								<li>Bahrain</li>
-	                       		<li>Kuwait</li>
-	                       		<li>Oman</li>   
-	                       		<li>Egypt</li>     
-	                       		<li>For the rest of the world:</li>       		                       		
-	                        </ul>					
-							<p><a href="#" class="btn btn-clear" data-toggle="modal" data-target="#inquireFormModal">Click here</a></p>
+						<div class="row">
+							<div class="col-md-10">
+								<p class="lead">
+								We are always looking to expand.<br />
+								Right now we're excited about - but not limited to - opportunities in these exciting locations!
+								</p>
+		                        <ul>
+									<li>Bahrain</li>
+		                       		<li>Kuwait</li>
+		                       		<li>Oman</li>   
+		                       		<li>Egypt</li>     
+		                       		<li>For other locations:</li>   		                       		
+		                        </ul>					
+								<p><a href="#" class="btn btn-clear" data-toggle="modal" data-target="#inquireFormModal">Click here</a></p>
+							</div>
 						</div>
 					</div>
 
@@ -64,12 +66,14 @@
 					<img src="public/images/ffh/slide2.jpg" />
 
 					<div class="swiper-content">	
-						<div class="col-md-10">
-							<p class="lead">
-								There are two kinds of fries – Angels and Saints. Angels are classic fries topped with condiments that range from traditional ketchup to more unique flavors from around the world, like the Garlic Parmesan with Black Truffle Salt. The sweet potato fries, called Saints, are served either salty or with sweet toppings like cinnamon and sugar, caramel, and pumpkin spice. There are also six ethereal salts to choose from like Aussie Chicken Salt & Ghost Pepper Salt, the hottest salt in the world! There are over 50 different flavors, although not all of them are available at all locations.
-							</p>
-	                        					
-							<p><a href="http://frenchfryheaven.com/" class="btn btn-clear" target="_blank">Visit Website</a></p>
+						<div class="row">
+							<div class="col-md-10">
+								<p class="lead">
+									There are two kinds of fries – Angels and Saints. Angels are classic fries topped with condiments that range from traditional ketchup to more unique flavors from around the world, like the Garlic Parmesan with Black Truffle Salt. The sweet potato fries, called Saints, are served either salty or with sweet toppings like cinnamon and sugar, caramel, and pumpkin spice. There are also six ethereal salts to choose from like Aussie Chicken Salt & Ghost Pepper Salt, the hottest salt in the world! There are over 50 different flavors, although not all of them are available at all locations.
+								</p>
+		                        					
+								<p><a href="http://frenchfryheaven.com/" class="btn btn-clear" target="_blank">Visit Website</a></p>
+							</div>
 						</div>
 					</div>
 
@@ -84,21 +88,24 @@
 			<div class="container swiper-custom-nav">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="col-md-11 col-md-offset-1">
-							<ul>	
-							    <li class="swiper-pagination-switch active">
-							    	<a href="#"><strong>Immediate</strong>Opportunities</a>
-							    </li>
-							    <li class="swiper-pagination-switch ">
-							    	<a href="#"><strong>Why</strong>French Fry Heaven</a>
-							    </li>
-							</ul>
+						<div class="row">
+							<div class="col-md-11 col-md-offset-1">
+								<ul>	
+								    <li class="swiper-pagination-switch active">
+								    	<a href="#"><strong>Immediate</strong>Opportunities</a>
+								    </li>
+								    <li class="swiper-pagination-switch ">
+								    	<a href="#"><strong>Why</strong>French Fry Heaven</a>
+								    </li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>				
 		</div>		
 	
+		<?php include('brands-carousel.php'); ?>
 
 		<div id="featuredOpportunities" class="parallax dark">
 			<div class="container-fluid">
@@ -116,7 +123,7 @@
 							
 								<h2>Who we're looking for</h2>
 								<p class="lead">
-									People passionate about Mr. Franchise<br />
+									People passionate about French Fry Heaven<br />
 									People who want to own their own business/control their own destiny<br />
 									People with strong leadership skills<br />
 									People who will be actively engaged in delivering the PERFECT GUEST EXPERIENCE and restaurant profitability<br />
@@ -136,27 +143,5 @@
 
 		</div>
 
-		<div id="about" class="parallax dark">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10">
-						<div class="content align-left">
-							<h2>French Fry Heaven is owned by Mr. Franchise</h2>
-							
-							<p class="lead">
-								Mr. Franchise is a full service franchise brokerage firm. We are proud to have established a unique presence in the franchising sector in that all our affiliated brokers are not only trained and experienced franchise brokers, but also franchise and/or business owners themselves. When clients pose questions regarding franchising our answers are derived not only from classroom training but from real world experience. We have found that real life rarely co-operates with textbook business examples!
-							</p>
-
-							<p class="mt-40">
-								<a href="about-us.php" class="btn btn-clear">Learn More</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>	
-
-			<div class="overlay"></div>
-
-		</div>	
 
 <?php include('footer.php'); ?>

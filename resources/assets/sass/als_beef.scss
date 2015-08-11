@@ -25,10 +25,6 @@ body {
 	background: $brandColor;
 }
 
-.rightside-menu {
-	a {
-		&.als-beef {
-			background: $brandColorTransparent;
-		}
-	}
+.als-beef {
+	background: $brandColorTransparent !important;
 }

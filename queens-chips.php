@@ -6,7 +6,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="col-md-1">
+						<div class="col-md-1 col-xs-2">
 							<h1>
 								<a href="index.php">
 									<img src="public/images/thumbs/queens-chips.png" alt="" title="" />
@@ -14,7 +14,7 @@
 							</h1>
 						</div>
 
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-3">
 							<h2>Franchising</h2>
 						</div>
 
@@ -39,15 +39,17 @@
 					<img src="public/images/queens-chips/slide1.jpg" />
 
 					<div class="swiper-content">	
-						<div class="col-md-10">
-							<p class="lead">
-							We are always looking to expand.<br />
-							Right now we're excited about - but not limited to - opportunities in these exciting locations!
-							</p>
-	                        <ul>
-	                       		<li>For the rest of the world:</li>           		                       		
-	                        </ul>						
-							<p><a href="#" class="btn btn-clear" data-toggle="modal" data-target="#inquireFormModal">Click here`</a></p>
+						<div class="row">
+							<div class="col-md-10">
+								<p class="lead">
+								We are always looking to expand.<br />
+								Right now we're excited about - but not limited to - opportunities in these exciting locations!
+								</p>
+		                        <ul>
+		                       		<li>For other locations:</li>       		                       		
+		                        </ul>						
+								<p><a href="#" class="btn btn-clear" data-toggle="modal" data-target="#inquireFormModal">Click here`</a></p>
+							</div>
 						</div>
 					</div>
 
@@ -58,8 +60,9 @@
 					<img src="public/images/queens-chips/slide1.jpg" />
 
 					<div class="swiper-content">	
-						<div class="col-md-10">
-							<p class="lead">
+						<div class="row">
+							<div class="col-md-10">
+								<p class="lead">
 							
 								Amsterdam is a city of tulips, windmills, museums, bicycles.
 								A city that everyone who visits the witch, with its atmosphere so fascinating.
@@ -73,9 +76,10 @@
 								It ensures a fresh product, freshly prepared, able to satisfy the palates of all those
 								who like to tease on the street without giving genuineness.
 								STREET FOOD STYLE. THE TASTE THAT DOES TREND.
-							</p>
+								</p>
 	                        					
-							<p><a href="http://www.queenschips.eu/index.php/en/" class="btn btn-clear" target="_blank">Visit Website</a></p>
+								<p><a href="http://www.queenschips.eu/index.php/en/" class="btn btn-clear" target="_blank">Visit Website</a></p>
+							</div>
 						</div>
 					</div>
 
@@ -104,6 +108,8 @@
 				</div>
 			</div>				
 		</div>		
+
+		<?php include('brands-carousel.php'); ?>
 	
 
 		<div id="featuredOpportunities" class="parallax dark">
@@ -122,7 +128,7 @@
 							
 								<h2>Who we're looking for</h2>
 								<p class="lead">
-									People passionate about Mr. Franchise<br />
+									People passionate about Queen's Chips<br />
 									People who want to own their own business/control their own destiny<br />
 									People with strong leadership skills<br />
 									People who will be actively engaged in delivering the PERFECT GUEST EXPERIENCE and restaurant profitability<br />
@@ -142,27 +148,5 @@
 
 		</div>
 
-		<div id="about" class="parallax dark">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10">
-						<div class="content align-left">
-							<h2>Queen's Chips is owned by Mr. Franchise</h2>
-							
-							<p class="lead">
-								Mr. Franchise is a full service franchise brokerage firm. We are proud to have established a unique presence in the franchising sector in that all our affiliated brokers are not only trained and experienced franchise brokers, but also franchise and/or business owners themselves. When clients pose questions regarding franchising our answers are derived not only from classroom training but from real world experience. We have found that real life rarely co-operates with textbook business examples!
-							</p>
-
-							<p class="mt-40">
-								<a href="about-us.php" class="btn btn-clear">Learn More</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>	
-
-			<div class="overlay"></div>
-
-		</div>	
 
 <?php include('footer.php'); ?>

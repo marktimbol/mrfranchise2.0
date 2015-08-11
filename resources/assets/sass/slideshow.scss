@@ -47,4 +47,20 @@
 
 
     }
+
+    a#tellMeMore {
+	    position: absolute;
+	    bottom: 0;
+	    z-index: 9999;
+	    color: white;
+	    border: 1px solid white;
+	    padding: 10px 15px;
+	    margin: 0 auto;
+	    text-align: center;
+	    display: block;
+	    cursor: pointer;    
+	    &:hover {
+	    	text-decoration: none;
+	    }	
+    }
 }

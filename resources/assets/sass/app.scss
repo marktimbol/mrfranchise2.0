@@ -210,6 +210,15 @@ header {
 	}
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+	display: none;
+}
+
+.mobile-only {
+	display: none;
+}
+
 footer {
 	background: #333;
 	height: 50px;
@@ -220,10 +229,6 @@ footer {
 			margin-top: 15px;
 		}
 	}
-}
-
-.mobile-only {
-	display: none;
 }
 
 @import 'resources/assets/sass/overight';
@@ -248,7 +253,7 @@ footer {
 		.container {
 			background: rgba(0,0,0,0.8);
 			padding: 20px;
-			margin-right: 113px;
+			
 		}
 	}
 }

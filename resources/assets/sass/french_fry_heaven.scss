@@ -25,10 +25,6 @@ body {
 	background: $brandColor;
 }
 
-.rightside-menu {
-	a {
-		&.french-fry-heaven {
-			background: $brandColorTransparent;
-		}
-	}
+.french-fry-heaven {
+	background: $brandColorTransparent !important;
 }

@@ -25,10 +25,8 @@ body {
 	background: $brandColor;
 }
 
-.rightside-menu {
-	a {
-		&.queens-chips {
-			background: $brandColorTransparent;
-		}
-	}
+
+.queens-chips {
+	background: $brandColorTransparent !important;
+	
 }

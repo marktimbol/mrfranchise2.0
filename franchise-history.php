@@ -74,7 +74,7 @@
 								);
 							foreach( $brands as $brand ) { ?>
 							<div class="cd-timeline-block">
-								<div class="cd-timeline-img cd-location <?=str_replace(['.png','.jpg'], '', $brand['image'])?>">
+								<div class="cd-timeline-img cd-location <?=str_replace(array('.png','.jpg'), '', $brand['image'])?>">
 									<img src="public/images/icons/cd-icon-picture.svg" alt="Picture">
 								</div>
 						 
@@ -84,7 +84,8 @@
 									</div>
 
 									<div class="col-md-9">
-										<h2><?=$brand['name']?></h2>
+										<h2>Just Sold!</h2>
+										<h3><?=$brand['name']?></h3>
 										<?php if( count($brand['countries']) > 0 ) {
 											echo '<ul>';
 											foreach( $brand['countries'] as $country ) { 

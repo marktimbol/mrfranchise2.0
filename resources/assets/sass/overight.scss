@@ -19,9 +19,17 @@ $darkColor: #333;
 		.cd-timeline-content {
 			h2 {
 				font-size: 24px;
+				color: red;
+				margin-top: 0;
+				margin-bottom: 5px;
+			}
+
+			h3 {
+				font-size: 20px;
 				color: $darkColor;
 				margin-top: 0;
 			}
+
 			p {
 				font-size: 16px;
 				color: $darkColor;
