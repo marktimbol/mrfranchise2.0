@@ -28,6 +28,9 @@
 
 		<?php include('right-menu.php'); ?>		
 		
+		<?php include('mobile-slideshow.php'); ?>
+
+		<?php include('brands-carousel.php'); ?>			
 
 		<div class="page-content parallax dark">
 			<div class="container">

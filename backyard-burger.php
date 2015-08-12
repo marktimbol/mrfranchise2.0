@@ -6,7 +6,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="col-md-1 col-xs-2">
+						<div class="col-md-1 col-xs-3">
 							<h1>
 								<a href="index.php">
 									<img src="public/images/thumbs/backyard-burger.png" alt="" title="" />
@@ -106,6 +106,7 @@
 			</div>				
 		</div>		
 	
+		<a id="tellMeMore" class="btn btn-clear" href="#featuredOpportunities">Hmm...Interesting, tell me more</a>
 
 		<?php include('brands-carousel.php'); ?>
 

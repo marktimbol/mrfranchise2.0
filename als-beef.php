@@ -6,7 +6,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="col-md-1 col-xs-2">
+						<div class="col-md-1 col-xs-3">
 							<h1>
 								<a href="index.php">
 									<img src="public/images/thumbs/als-beef.png" alt="" title="" />
@@ -50,7 +50,10 @@
 		                       		<li>Oman</li>   
 		                       		<li>Egypt</li>     
 		                       		<li>For other locations:</li>      		                       		
-		                        </ul>						
+		                        </ul>	
+
+		                        <div class="clearfix"></div>
+
 								<p><a href="#" class="btn btn-clear" data-toggle="modal" data-target="#inquireFormModal">Click here</a></p>
 							</div>
 						</div>
@@ -75,12 +78,50 @@
 					</div>
 
 					<div class="overlay"></div>
-				</div>								
+				</div>	
+
+				<div class="swiper-slide desktop-only">
+					<img src="public/images/als/als-beef-bg.jpg" />
+
+					<div class="swiper-content media-gallery">	
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-5">
+										<?php foreach( range(1,12) as $image ) { ?>
+										<div class="col-md-3">
+											<a href="public/images/als/gallery/<?=$image?>.jpg" rel="prettyPhoto[thumbs]">
+												<img src="public/images/als/gallery/<?=$image?>.jpg" alt="" title="" class="img-responsive" />
+											</a>
+										</div>
+										<?php } ?>
+									</div>
+
+									<div class="col-md-4">
+										<a href="https://www.youtube.com/watch?v=-Qoa1R1Svnk" rel="prettyPhoto[video]">
+											<img src="public/images/als/gallery/video-thumb.jpg" alt="" title="" class="img-responsive" />
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<ul class="press">
+											<?php foreach( range(1,5) as $press ) { ?>
+											<li>
+												<h4><a href="#">Press title goes here</a></h4>
+												<p>Press short description goes here</p>
+											</li>
+											<?php } ?>
+										</ul>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="overlay"></div>
+				</div>												
 
 			</div>
-			
- 			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
 
 			<div class="container swiper-custom-nav">
 				<div class="row">
@@ -94,19 +135,22 @@
 								    <li class="swiper-pagination-switch ">
 								    	<a href="#"><strong>Why</strong>Al's Beef</a>
 								    </li>
+								    <li class="swiper-pagination-switch desktop-only">
+								    	<a href="#"><strong>Media</strong>Gallery</a>
+								    </li>								    
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<a id="tellMeMore">Hmm...Interesting, tell me more</a>				
+							
 		</div>		
+
+		<a id="tellMeMore" class="btn btn-clear" href="#featuredOpportunities">Hmm...Interesting, tell me more</a>
 
 		<?php include('brands-carousel.php'); ?>
 	
-
 		<div id="featuredOpportunities" class="parallax dark">
 			<div class="container-fluid">
 				<div class="row">

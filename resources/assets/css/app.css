@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
     -moz-transition: all 0.3s;
     transition: all 0.3s; }
   .btn.btn-clear {
-    border: 3px solid #fff;
+    border: 1px solid #fff;
     color: #fff;
     background: none; }
     .btn.btn-clear::after {
@@ -203,21 +203,21 @@ h1, h2, h3, h4, h5, h6 {
       .swiper-container .swiper-wrapper .swiper-slide .swiper-content p {
         margin-top: 30px;
         text-align: left !important; }
+      .swiper-container .swiper-wrapper .swiper-slide .swiper-content.media-gallery .col-md-3 {
+        margin-bottom: 25px; }
+      .swiper-container .swiper-wrapper .swiper-slide .swiper-content.media-gallery ul.press {
+        list-style: none; }
+        .swiper-container .swiper-wrapper .swiper-slide .swiper-content.media-gallery ul.press li {
+          margin-bottom: 20px; }
+          .swiper-container .swiper-wrapper .swiper-slide .swiper-content.media-gallery ul.press li h4 {
+            margin-bottom: 5px; }
+            .swiper-container .swiper-wrapper .swiper-slide .swiper-content.media-gallery ul.press li h4 a {
+              color: white; }
+          .swiper-container .swiper-wrapper .swiper-slide .swiper-content.media-gallery ul.press li p {
+            font-size: 12px;
+            margin-top: 0px; }
     .swiper-container .swiper-wrapper .swiper-slide img {
       width: 100%; }
-  .swiper-container a#tellMeMore {
-    position: absolute;
-    bottom: 0;
-    z-index: 9999;
-    color: white;
-    border: 1px solid white;
-    padding: 10px 15px;
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-    cursor: pointer; }
-    .swiper-container a#tellMeMore:hover {
-      text-decoration: none; }
 
 nav {
   float: right; }
@@ -342,6 +342,19 @@ header {
 .mobile-only {
   display: none; }
 
+a#tellMeMore {
+  position: absolute;
+  bottom: 10px;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  margin-left: 35%;
+  display: block;
+  z-index: 9999; }
+  a#tellMeMore:hover {
+    text-decoration: none;
+    color: #333; }
+
 footer {
   background: #333;
   height: 50px; }
@@ -374,6 +387,12 @@ footer {
   color: white; }
 
 @media only screen and (max-width: 40em) {
+  .desktop-only {
+    display: none !important; }
+  .btn {
+    padding: 8px 15px; }
+  a#tellMeMore {
+    display: none; }
   .rightside-menu {
     display: none !important; }
   header h1 img {
@@ -385,13 +404,28 @@ footer {
   header .clearfix {
     display: none !important; }
   .swiper-container .swiper-content h2 {
-    font-size: 14px; }
-  .swiper-container .swiper-content ul li {
-    font-size: 14px !important; }
+    font-size: 12px; }
+  .swiper-container .swiper-content ul {
+    margin-left: 0px !important; }
+    .swiper-container .swiper-content ul li {
+      font-size: 13px !important;
+      display: inline-block;
+      margin-right: 10px; }
+    .swiper-container .swiper-content ul:after {
+      clear: both; }
+  .swiper-container .swiper-content p {
+    font-size: 13px !important;
+    margin-top: 5px !important; }
+  .swiper-container .swiper-content .btn {
+    padding: 2px 5px;
+    border: 1px solid #fff !important;
+    text-transform: lowercase;
+    position: absolute;
+    right: 20px; }
+  .parallax .btn {
+    display: block; }
   .swiper-custom-nav {
     display: none !important; }
-  .btn {
-    padding: 8px 15px; }
   .rightside-popups {
     display: none !important; }
   .mobile-only {
@@ -403,24 +437,32 @@ footer {
       .mobile-only .brands li {
         padding: 5px; }
   body.brand-page header h1 img {
-    width: 130% !important; }
+    width: 100% !important; }
   body.brand-page header h2 {
     font-size: 20px;
     margin-left: 0px !important;
-    margin-top: 30px !important;
+    margin-top: 35px !important;
     text-align: center; }
+  body.brand-page .swiper-container {
+    height: 375px; }
   body.brand-page .parallax .content .logo-inquire {
     margin: 0 auto; }
   body.brand-page .parallax .content h2 {
     text-align: center !important; }
   body.brand-page .parallax .content .col-md-8 {
     margin-top: 130px; }
+  body.brand-page .mobile-only .brands {
+    margin-top: -50px;
+    position: relative;
+    z-index: 999; }
   body.brand-page #trigger-overlay {
     top: 25px !important; }
   .page-content {
     background: url(../images/local-woman.jpg) 30% 0% no-repeat !important; }
     .page-content .container {
       margin-right: 0px !important; }
+  .page-default .page-content {
+    padding-top: 0px !important; }
   #ourBrands {
     background: url(../images/franchise-opportunity-bg.jpg) 40% 80% no-repeat !important; } }
 
@@ -500,6 +542,9 @@ body.brand-page {
       display: inline-block;
       vertical-align: middle;
       max-width: 70%; }
+    body.brand-page .parallax .content .logo-inquire .btn {
+      display: block;
+      margin-top: 20px; }
 
 body.als-beef-page .brand-overlay {
   background: rgba(255, 242, 0, 0.8); }
@@ -514,7 +559,7 @@ body.als-beef-page .parallax .content .logo-inquire {
   background: #fff200; }
 
 .als-beef {
-  background: rgba(255, 242, 0, 0.8) !important; }
+  background: #fff200 !important; }
 
 body.queens-chips-page .brand-overlay {
   background: rgba(37, 70, 51, 0.8); }
@@ -529,7 +574,7 @@ body.queens-chips-page .parallax .content .logo-inquire {
   background: #254633; }
 
 .queens-chips {
-  background: rgba(37, 70, 51, 0.8) !important; }
+  background: #254633 !important; }
 
 body.krush-burger-page .brand-overlay {
   background: rgba(248, 168, 10, 0.8); }
@@ -547,7 +592,7 @@ body.krush-burger-page .parallax .content .logo-inquire {
   background: rgba(248, 168, 10, 0.8); }
 
 .krush-burger {
-  background: rgba(248, 168, 10, 0.8) !important; }
+  background: #f8a30a !important; }
 
 body.nancy-pizza-page .brand-overlay {
   background: rgba(35, 31, 32, 0.8); }
@@ -559,7 +604,7 @@ body.nancy-pizza-page .parallax .content .logo-inquire {
   background: #231f20; }
 
 .nancy-pizza {
-  background: rgba(35, 31, 32, 0.8) !important; }
+  background: #231f20 !important; }
 
 body.lobster-joint-page .brand-overlay {
   background: rgba(237, 30, 36, 0.8); }
@@ -583,7 +628,7 @@ body.french-fry-heaven-page .parallax .content .logo-inquire {
   background: #0386b2; }
 
 .french-fry-heaven {
-  background: rgba(3, 134, 178, 0.8) !important; }
+  background: #0386b2 !important; }
 
 body.max-burger-page .brand-overlay {
   background: rgba(239, 34, 39, 0.8); }
@@ -607,7 +652,7 @@ body.backyard-burger-page .parallax .content .logo-inquire {
   background: #231f20; }
 
 .backyard-burger {
-  background: rgba(35, 31, 32, 0.8) !important; }
+  background: #231f20 !important; }
 
 .page-default .page-content {
   padding-top: 150px; }

@@ -43,9 +43,6 @@
 				</div>
 				<?php } ?>
 			</div>
-			<!--<div class="swiper-pagination"></div>
- 			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div> -->
 		</div>
 
 		<?php include('brands-carousel.php'); ?>	

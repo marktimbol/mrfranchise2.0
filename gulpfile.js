@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var minifyCss = require('gulp-minify-css');
+var sourcemaps = require('gulp-sourcemaps');
 
 var js_path = 'resources/assets/js/';
 var css_path = 'resources/assets/css/';
@@ -21,11 +22,14 @@ gulp.task('styles', function() {
 			css_path + 'timeline.css',
 			css_path + 'owl.carousel.css',
 			css_path + 'owl.theme.css',
+			css_path + 'prettyPhoto.css',
 			css_path + 'overlay.css',
 			css_path + 'app.css'
 		])
-		.pipe(concat('all.css'))
-		.pipe(minifyCss({compatibility: 'ie8'}))
+		.pipe(sourcemaps.init())
+			.pipe(concat('all.css'))
+			.pipe(minifyCss({compatibility: 'ie8'}))
+		.pipe(sourcemaps.write('../sourcemaps'))
 		.pipe(gulp.dest('./public/css/'));
 });
 
@@ -37,6 +41,8 @@ gulp.task('scripts', function() {
   		js_path + 'vendor/owl.carousel.js',
   		js_path + 'vendor/timeline.js',
   		js_path + 'vendor/classie.js',
+  		js_path + 'vendor/jquery.easing.min.js',
+  		js_path + 'vendor/jquery.prettyPhoto.js',
   		js_path + 'vendor/overlay.js',
   		js_path + 'app.js' 
   	])

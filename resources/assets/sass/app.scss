@@ -219,6 +219,21 @@ header {
 	display: none;
 }
 
+a#tellMeMore {
+    position: absolute;
+    bottom: 10px;    
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    margin-left: 35%;
+    display: block; 
+    z-index: 9999;
+    &:hover {
+    	text-decoration: none;
+    	color: #333;
+    }	
+}
+
 footer {
 	background: #333;
 	height: 50px;
