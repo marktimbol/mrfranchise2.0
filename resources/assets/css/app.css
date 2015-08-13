@@ -16,6 +16,92 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #303135; }
 
+header {
+  background: url("../images/header-shadow.png") repeat-x;
+  position: absolute;
+  z-index: 9999;
+  width: 100%; }
+  header .float-right {
+    margin-right: 20px; }
+
+a#tellMeMore {
+  position: absolute;
+  bottom: 10px;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  display: block;
+  z-index: 9999;
+  width: 320px;
+  right: 0;
+  left: 0;
+  margin: auto; }
+  a#tellMeMore:hover {
+    text-decoration: none;
+    color: #333; }
+
+.parallax {
+  background-attachment: fixed !important;
+  position: relative;
+  height: 100%; }
+  .parallax.dark .content {
+    color: white;
+    position: relative;
+    z-index: 10;
+    padding: 40px 0px;
+    overflow: hidden; }
+    .parallax.dark .content h2, .parallax.dark .content h3, .parallax.dark .content h4, .parallax.dark .content h5, .parallax.dark .content h6 {
+      text-align: center;
+      text-transform: uppercase;
+      color: white; }
+    .parallax.dark .content p.lead {
+      text-align: center; }
+    .parallax.dark .content.align-left h2, .parallax.dark .content.align-left h3, .parallax.dark .content.align-left h4, .parallax.dark .content.align-left h5, .parallax.dark .content.align-left h6, .parallax.dark .content.align-left p {
+      text-align: left; }
+
+#featuredOpportunities {
+  width: 100%;
+  background-size: cover;
+  background: url("../images/featured-opportunities.jpg") 0% 0% no-repeat; }
+  #featuredOpportunities ul.brands {
+    list-style: none; }
+    #featuredOpportunities ul.brands li figure.brand {
+      text-align: center; }
+      #featuredOpportunities ul.brands li figure.brand img {
+        padding: 30px; }
+      #featuredOpportunities ul.brands li figure.brand .inquiry {
+        display: none; }
+      #featuredOpportunities ul.brands li figure.brand .info {
+        display: block; }
+      #featuredOpportunities ul.brands li figure.brand.active figcaption .inquiry {
+        display: block; }
+      #featuredOpportunities ul.brands li figure.brand.active figcaption .info {
+        display: none; }
+
+#ourBrands {
+  width: 100%;
+  background-size: cover;
+  background: url("../images/franchise-opportunity-bg.jpg") 0% 80% no-repeat; }
+  #ourBrands ul {
+    list-style: none; }
+    #ourBrands ul.brands {
+      overflow: hidden; }
+      #ourBrands ul.brands li figure.brand figcaption h4 {
+        text-align: center;
+        color: #333; }
+
+#about {
+  width: 100%;
+  background-size: cover;
+  background: url("../images/featured-opportunities.jpg") 0 10% no-repeat; }
+
+footer {
+  background: #333;
+  height: 50px; }
+  footer p.copyright {
+    color: white;
+    margin-top: 15px; }
+
 .img-responsive {
   width: 100%; }
 
@@ -27,6 +113,59 @@ h1, h2, h3, h4, h5, h6 {
 
 .mt-40 {
   margin-top: 40px; }
+
+.float-right {
+  float: right; }
+
+.modal {
+  z-index: 9999; }
+
+.light-background h2, .light-background p {
+  color: #333 !important; }
+
+.light-background .btn {
+  color: #333; }
+
+.light-background ul li {
+  color: #333; }
+
+.overlay {
+  background: url("../images/overlay.png") repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.panel p {
+  color: #333; }
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none; }
+
+.mobile-only {
+  display: none; }
+
+.overflow {
+  overflow: hidden; }
+
+.no-padding [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.no-padding .col-md-3 {
+  padding: 1px !important; }
+
+.page-default .page-content {
+  width: 100%;
+  padding-top: 150px;
+  background-size: cover;
+  background: url("../images/local-woman.jpg") 50% 0% no-repeat; }
+  .page-default .page-content .container {
+    padding: 20px; }
+    .page-default .page-content .container .img-thumbnail {
+      margin-bottom: 25px; }
 
 .btn {
   padding: 15px 30px;
@@ -193,8 +332,12 @@ h1, h2, h3, h4, h5, h6 {
     .swiper-container .swiper-wrapper .swiper-slide .swiper-content {
       position: absolute;
       top: 40%;
-      left: 10%;
-      z-index: 9999; }
+      left: 7%;
+      z-index: 9999;
+      width: 1170px;
+      right: 0;
+      left: 0;
+      margin: auto; }
       .swiper-container .swiper-wrapper .swiper-slide .swiper-content h2 {
         color: white;
         text-transform: uppercase;
@@ -203,8 +346,6 @@ h1, h2, h3, h4, h5, h6 {
       .swiper-container .swiper-wrapper .swiper-slide .swiper-content p {
         margin-top: 30px;
         text-align: left !important; }
-      .swiper-container .swiper-wrapper .swiper-slide .swiper-content.media-gallery .col-md-3 {
-        margin-bottom: 25px; }
       .swiper-container .swiper-wrapper .swiper-slide .swiper-content.media-gallery ul.press {
         list-style: none; }
         .swiper-container .swiper-wrapper .swiper-slide .swiper-content.media-gallery ul.press li {
@@ -249,231 +390,6 @@ form label {
 .modal form label {
   color: #333; }
 
-header {
-  background: url("../images/header-shadow.png") repeat-x;
-  position: absolute;
-  z-index: 9999;
-  width: 100%; }
-
-.modal {
-  z-index: 9999; }
-
-.parallax {
-  background-attachment: fixed !important;
-  position: relative;
-  height: 100%; }
-  .parallax.dark .content {
-    color: white;
-    position: relative;
-    z-index: 10;
-    padding: 40px 0px;
-    overflow: hidden; }
-    .parallax.dark .content h2, .parallax.dark .content h3, .parallax.dark .content h4, .parallax.dark .content h5, .parallax.dark .content h6 {
-      text-align: center;
-      text-transform: uppercase;
-      color: white; }
-    .parallax.dark .content p.lead {
-      text-align: center; }
-    .parallax.dark .content.align-left h2, .parallax.dark .content.align-left h3, .parallax.dark .content.align-left h4, .parallax.dark .content.align-left h5, .parallax.dark .content.align-left h6, .parallax.dark .content.align-left p {
-      text-align: left; }
-
-.page-content {
-  width: 100%;
-  background-size: cover;
-  background: url("../images/local-woman.jpg") 50% 0% no-repeat; }
-
-#featuredOpportunities {
-  width: 100%;
-  background-size: cover;
-  background: url("../images/featured-opportunities.jpg") 0% 0% no-repeat; }
-  #featuredOpportunities ul.brands {
-    list-style: none; }
-    #featuredOpportunities ul.brands li figure.brand {
-      text-align: center; }
-      #featuredOpportunities ul.brands li figure.brand img {
-        padding: 30px; }
-      #featuredOpportunities ul.brands li figure.brand .inquiry {
-        display: none; }
-      #featuredOpportunities ul.brands li figure.brand .info {
-        display: block; }
-      #featuredOpportunities ul.brands li figure.brand.active figcaption .inquiry {
-        display: block; }
-      #featuredOpportunities ul.brands li figure.brand.active figcaption .info {
-        display: none; }
-
-#ourBrands {
-  width: 100%;
-  background-size: cover;
-  background: url("../images/franchise-opportunity-bg.jpg") 0% 80% no-repeat; }
-  #ourBrands ul {
-    list-style: none; }
-    #ourBrands ul.brands {
-      overflow: hidden; }
-      #ourBrands ul.brands li figure.brand figcaption h4 {
-        text-align: center;
-        color: #333; }
-
-#about {
-  width: 100%;
-  background-size: cover;
-  background: url("../images/featured-opportunities.jpg") 0 10% no-repeat; }
-
-.light-background h2, .light-background p {
-  color: #333 !important; }
-
-.light-background .btn {
-  color: #333; }
-
-.overlay {
-  background: url("../images/overlay.png") repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-.panel p {
-  color: #333; }
-
-.swiper-button-next,
-.swiper-button-prev {
-  display: none; }
-
-.mobile-only {
-  display: none; }
-
-a#tellMeMore {
-  position: absolute;
-  bottom: 10px;
-  border: none;
-  padding: 10px 15px;
-  text-align: center;
-  margin-left: 35%;
-  display: block;
-  z-index: 9999; }
-  a#tellMeMore:hover {
-    text-decoration: none;
-    color: #333; }
-
-footer {
-  background: #333;
-  height: 50px; }
-  footer p.copyright {
-    color: white;
-    margin-top: 15px; }
-
-.panel-title {
-  font-size: 18px; }
-
-.owl-carousel li {
-  text-align: center; }
-
-#cd-timeline .cd-timeline-block .cd-timeline-content h2 {
-  font-size: 24px;
-  color: red;
-  margin-top: 0;
-  margin-bottom: 5px; }
-
-#cd-timeline .cd-timeline-block .cd-timeline-content h3 {
-  font-size: 20px;
-  color: #333;
-  margin-top: 0; }
-
-#cd-timeline .cd-timeline-block .cd-timeline-content p {
-  font-size: 16px;
-  color: #333; }
-
-#cd-timeline .cd-timeline-block .cd-timeline-content .cd-date {
-  color: white; }
-
-@media only screen and (max-width: 40em) {
-  .desktop-only {
-    display: none !important; }
-  .btn {
-    padding: 8px 15px; }
-  a#tellMeMore {
-    display: none; }
-  .rightside-menu {
-    display: none !important; }
-  header h1 img {
-    width: 50%; }
-  header #trigger-overlay {
-    top: -60px !important; }
-  header nav.primary, header nav.secondary {
-    display: none !important; }
-  header .clearfix {
-    display: none !important; }
-  .swiper-container .swiper-content h2 {
-    font-size: 12px; }
-  .swiper-container .swiper-content ul {
-    margin-left: 0px !important; }
-    .swiper-container .swiper-content ul li {
-      font-size: 13px !important;
-      display: inline-block;
-      margin-right: 10px; }
-    .swiper-container .swiper-content ul:after {
-      clear: both; }
-  .swiper-container .swiper-content p {
-    font-size: 13px !important;
-    margin-top: 5px !important; }
-  .swiper-container .swiper-content .btn {
-    padding: 2px 5px;
-    border: 1px solid #fff !important;
-    text-transform: lowercase;
-    position: absolute;
-    right: 20px; }
-  .parallax .btn {
-    display: block; }
-  .swiper-custom-nav {
-    display: none !important; }
-  .rightside-popups {
-    display: none !important; }
-  .mobile-only {
-    display: block; }
-    .mobile-only .brands {
-      list-style: none;
-      overflow: hidden;
-      margin: 0; }
-      .mobile-only .brands li {
-        padding: 5px; }
-  body.brand-page header h1 img {
-    width: 100% !important; }
-  body.brand-page header h2 {
-    font-size: 20px;
-    margin-left: 0px !important;
-    margin-top: 35px !important;
-    text-align: center; }
-  body.brand-page .swiper-container {
-    height: 375px; }
-  body.brand-page .parallax .content .logo-inquire {
-    margin: 0 auto; }
-  body.brand-page .parallax .content h2 {
-    text-align: center !important; }
-  body.brand-page .parallax .content .col-md-8 {
-    margin-top: 130px; }
-  body.brand-page .mobile-only .brands {
-    margin-top: -50px;
-    position: relative;
-    z-index: 999; }
-  body.brand-page #trigger-overlay {
-    top: 25px !important; }
-  .page-content {
-    background: url(../images/local-woman.jpg) 30% 0% no-repeat !important; }
-    .page-content .container {
-      margin-right: 0px !important; }
-  .page-default .page-content {
-    padding-top: 0px !important; }
-  #ourBrands {
-    background: url(../images/franchise-opportunity-bg.jpg) 40% 80% no-repeat !important; } }
-
-/* max-width 640px, mobile-only styles, use when QAing mobile issues */
-/* min-width 641px, medium screens */
-/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-/* min-width 1025px, large screens */
-/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
-/* min-width 1441px, xlarge screens */
-/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-/* min-width 1921px, xxlarge screens */
 body.brand-page {
   background: none; }
   body.brand-page .brand-overlay {
@@ -482,6 +398,8 @@ body.brand-page {
     left: 0;
     width: 100%;
     height: 100%; }
+  body.brand-page header h1 {
+    margin-top: 10px; }
   body.brand-page header h2 {
     color: white;
     text-transform: uppercase;
@@ -490,8 +408,7 @@ body.brand-page {
   body.brand-page .swiper-container {
     position: relative; }
     body.brand-page .swiper-container .swiper-wrapper .swiper-slide .swiper-content {
-      top: 33%;
-      left: 8%; }
+      top: 33%; }
       body.brand-page .swiper-container .swiper-wrapper .swiper-slide .swiper-content p {
         color: white; }
       body.brand-page .swiper-container .swiper-wrapper .swiper-slide .swiper-content ul {
@@ -503,7 +420,11 @@ body.brand-page {
     body.brand-page .swiper-container .swiper-custom-nav {
       position: absolute;
       z-index: 2;
-      top: 200px; }
+      top: 200px;
+      width: 1170px;
+      left: 0 !important;
+      right: 0;
+      margin: auto; }
       body.brand-page .swiper-container .swiper-custom-nav ul {
         list-style: none;
         overflow: hidden;
@@ -545,6 +466,8 @@ body.brand-page {
     body.brand-page .parallax .content .logo-inquire .btn {
       display: block;
       margin-top: 20px; }
+  body.brand-page .parallax .content ul.lead {
+    margin-left: 20px; }
 
 body.als-beef-page .brand-overlay {
   background: rgba(255, 242, 0, 0.8); }
@@ -606,15 +529,6 @@ body.nancy-pizza-page .parallax .content .logo-inquire {
 .nancy-pizza {
   background: #231f20 !important; }
 
-body.lobster-joint-page .brand-overlay {
-  background: rgba(237, 30, 36, 0.8); }
-
-body.lobster-joint-page header {
-  background: rgba(237, 30, 36, 0.8); }
-
-body.lobster-joint-page .parallax .content .logo-inquire {
-  background: #ed1e24; }
-
 body.french-fry-heaven-page .brand-overlay {
   background: rgba(3, 134, 178, 0.8); }
 
@@ -630,18 +544,6 @@ body.french-fry-heaven-page .parallax .content .logo-inquire {
 .french-fry-heaven {
   background: #0386b2 !important; }
 
-body.max-burger-page .brand-overlay {
-  background: rgba(239, 34, 39, 0.8); }
-
-body.max-burger-page header {
-  background: rgba(239, 34, 39, 0.8); }
-
-body.max-burger-page .parallax .content .logo-inquire {
-  background: #ef2227; }
-
-.rightside-menu a.max-burger {
-  background: rgba(239, 34, 39, 0.8); }
-
 body.backyard-burger-page .brand-overlay {
   background: rgba(35, 31, 32, 0.8); }
 
@@ -655,7 +557,127 @@ body.backyard-burger-page .parallax .content .logo-inquire {
   background: #231f20 !important; }
 
 .page-default .page-content {
-  padding-top: 150px; }
+  width: 100%;
+  padding-top: 150px;
+  background-size: cover;
+  background: url("../images/local-woman.jpg") 50% 0% no-repeat; }
   .page-default .page-content .container {
-    background: rgba(0, 0, 0, 0.8);
     padding: 20px; }
+    .page-default .page-content .container .img-thumbnail {
+      margin-bottom: 25px; }
+
+.panel-title {
+  font-size: 18px; }
+
+.owl-carousel li {
+  text-align: center; }
+
+#cd-timeline .cd-timeline-block .cd-timeline-content h2 {
+  font-size: 24px;
+  color: red;
+  margin-top: 0;
+  margin-bottom: 5px; }
+
+#cd-timeline .cd-timeline-block .cd-timeline-content h3 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 0; }
+
+#cd-timeline .cd-timeline-block .cd-timeline-content p {
+  font-size: 16px;
+  color: #333; }
+
+#cd-timeline .cd-timeline-block .cd-timeline-content .cd-date {
+  color: white; }
+
+@media only screen and (max-width: 40em) {
+  .desktop-only {
+    display: none !important; }
+  .btn {
+    padding: 8px 15px; }
+  a#tellMeMore {
+    display: none; }
+  .rightside-menu {
+    display: none !important; }
+  header h1 img {
+    width: 50%; }
+  header #trigger-overlay {
+    top: -60px !important; }
+  header nav.primary, header nav.secondary {
+    display: none !important; }
+  header .clearfix {
+    display: none !important; }
+  .swiper-container .swiper-content {
+    width: 100% !important; }
+    .swiper-container .swiper-content h2 {
+      font-size: 12px; }
+    .swiper-container .swiper-content ul {
+      margin-left: 0px !important; }
+      .swiper-container .swiper-content ul li {
+        font-size: 13px !important;
+        display: inline-block;
+        margin-right: 10px; }
+      .swiper-container .swiper-content ul:after {
+        clear: both; }
+    .swiper-container .swiper-content p {
+      font-size: 13px !important;
+      margin-top: 5px !important; }
+    .swiper-container .swiper-content .btn {
+      padding: 2px 5px;
+      border: 1px solid #fff !important;
+      text-transform: lowercase;
+      position: absolute; }
+  #mediaGallery h3 {
+    margin-left: 20px; }
+  .parallax .btn {
+    display: block; }
+  .swiper-custom-nav {
+    display: none !important; }
+  .rightside-popups {
+    display: none !important; }
+  .mobile-only {
+    display: block; }
+    .mobile-only .brands {
+      list-style: none;
+      overflow: hidden;
+      margin: 0; }
+      .mobile-only .brands li {
+        padding: 5px; }
+  body.brand-page header h1 img {
+    width: 100% !important; }
+  body.brand-page header h2 {
+    font-size: 20px;
+    margin-left: 0px !important;
+    margin-top: 35px !important;
+    text-align: center; }
+  body.brand-page .swiper-container {
+    height: 375px; }
+  body.brand-page .parallax .content .logo-inquire {
+    margin: 0 auto; }
+  body.brand-page .parallax .content h2 {
+    text-align: center !important; }
+  body.brand-page .parallax .content .col-md-10 {
+    margin-top: 100px; }
+  body.brand-page .mobile-only .brands {
+    margin-top: -50px;
+    position: relative;
+    z-index: 999; }
+  body.brand-page #trigger-overlay {
+    top: 25px !important; }
+  .page-content {
+    background: url(../images/local-woman.jpg) 30% 0% no-repeat !important; }
+    .page-content .container {
+      margin-right: 0px !important; }
+  .page-default .page-content {
+    padding-top: 0px !important; }
+  #ourBrands {
+    background: url(../images/franchise-opportunity-bg.jpg) 40% 80% no-repeat !important; } }
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 1025px, large screens */
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xxlarge screens */

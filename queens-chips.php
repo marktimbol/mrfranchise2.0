@@ -1,145 +1,105 @@
-<?php include('header.php'); ?>
+<?php 
+	$brand = array(
+		'name'	=> "Queen's Chips",
+		'logo'	=> 'queens-chips.png',
+		'directory' => 'queens-chips', //public/images/
+
+		'slides' => array(
+			0 => array(
+				'background' => 'public/images/queens-chips/slide1.jpg',
+				'content' => "
+					<p class='lead'>
+					Our Brands always looking to expand.<br />
+					Right now we're excited about - but not limited to - opportunities in these exciting locations!
+					</p>
+                    <ul>
+                   		<li>For other locations:</li>       		                       		
+                    </ul>						
+					<p><a href='#' class='btn btn-clear' data-toggle='modal' data-target='#inquireFormModal'>Click here`</a></p>
+				
+				",
+
+				'class' => ''
+			),
+
+			1 => array(
+				'background' => 'public/images/queens-chips/slide1.jpg',
+				'content' => "
+					<p class='lead'>
+				
+					Amsterdam is a city of tulips, windmills, museums, bicycles.
+					A city that everyone who visits the witch, with its atmosphere so fascinating.
+					Amsterdam is a city to live and to explore by foot, discovering in its streets
+					a must in the international street food: french fries Dutch.
+					QUEEN'S CHIPS was created to bring the world the Dutch style by adding to it a focus
+					authenticity of raw materials to provide an experience related to a concept of street food genuine.
+					By implementing advanced production processes QUEEN'S CHIPS is able
+					to achieve high quality standards and to position itself among industry leaders.
+					QUEEN'S CHIPS is promoting a real trend of international gastronomy and, in balance between tradition and quality,
+					It ensures a fresh product, freshly prepared, able to satisfy the palates of all those
+					who like to tease on the street without giving genuineness.
+					STREET FOOD STYLE. THE TASTE THAT DOES TREND.
+					</p>
+                					
+					<p><a href='http://www.queenschips.eu/index.php/en/' class='btn btn-clear' target='_blank'>Visit Website</a></p>
+				
+				",
+
+				'class' => ''
+			),	
+
+			2 => array(
+				'background' => 'public/images/queens-chips/slide1.jpg',
+				'content' => 'gallery',
+				'class' => 'media-gallery'
+				)
+		)
+	);
+
+	include('header.php');
+
+?>
 	
 	<body class="brand-page queens-chips-page">
 		
-		<header>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-1 col-xs-3">
-							<h1>
-								<a href="index.php">
-									<img src="public/images/thumbs/queens-chips.png" alt="" title="" />
-								</a>
-							</h1>
-						</div>
+		<?php include('header-brand.php'); ?>
 
-						<div class="col-md-3 col-xs-3">
-							<h2>Franchising</h2>
-						</div>
+		<?php include('brand-slideshow.php'); ?>
 
-						<div class="col-md-7">
-
-							<?php include('top-nav.php'); ?>
-						</div>
-						
-					</div>
-				</div>	
-			</div>
-		</header>
-
-		<?php include('right-menu.php'); ?>	
-
-		<div class="clearfix"></div>
-
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-				
-				<div class="swiper-slide">
-					<img src="public/images/queens-chips/slide1.jpg" />
-
-					<div class="swiper-content">	
-						<div class="row">
-							<div class="col-md-10">
-								<p class="lead">
-								We are always looking to expand.<br />
-								Right now we're excited about - but not limited to - opportunities in these exciting locations!
-								</p>
-		                        <ul>
-		                       		<li>For other locations:</li>       		                       		
-		                        </ul>						
-								<p><a href="#" class="btn btn-clear" data-toggle="modal" data-target="#inquireFormModal">Click here`</a></p>
-							</div>
-						</div>
-					</div>
-
-					<div class="overlay"></div>
-				</div>
-
-				<div class="swiper-slide">
-					<img src="public/images/queens-chips/slide1.jpg" />
-
-					<div class="swiper-content">	
-						<div class="row">
-							<div class="col-md-10">
-								<p class="lead">
-							
-								Amsterdam is a city of tulips, windmills, museums, bicycles.
-								A city that everyone who visits the witch, with its atmosphere so fascinating.
-								Amsterdam is a city to live and to explore by foot, discovering in its streets
-								a must in the international street food: french fries Dutch.
-								QUEEN'S CHIPS was created to bring the world the Dutch style by adding to it a focus
-								authenticity of raw materials to provide an experience related to a concept of street food genuine.
-								By implementing advanced production processes QUEEN'S CHIPS is able
-								to achieve high quality standards and to position itself among industry leaders.
-								QUEEN'S CHIPS is promoting a real trend of international gastronomy and, in balance between tradition and quality,
-								It ensures a fresh product, freshly prepared, able to satisfy the palates of all those
-								who like to tease on the street without giving genuineness.
-								STREET FOOD STYLE. THE TASTE THAT DOES TREND.
-								</p>
-	                        					
-								<p><a href="http://www.queenschips.eu/index.php/en/" class="btn btn-clear" target="_blank">Visit Website</a></p>
-							</div>
-						</div>
-					</div>
-
-					<div class="overlay"></div>
-				</div>								
-
-			</div>
-			
- 			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-
-			<div class="container swiper-custom-nav">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-11 col-md-offset-1">
-							<ul>	
-							    <li class="swiper-pagination-switch active">
-							    	<a href="#"><strong>Immediate</strong>Opportunities</a>
-							    </li>
-							    <li class="swiper-pagination-switch ">
-							    	<a href="#"><strong>Why</strong>Queen's Chips</a>
-							    </li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>				
-		</div>		
 
 		<a id="tellMeMore" class="btn btn-clear" href="#featuredOpportunities">Hmm...Interesting, tell me more</a>
-
-		<?php include('brands-carousel.php'); ?>
 	
+		<?php include('mobile-brandsCarousel.php'); ?> <!--FOR MOBILE VIEW ONLY-->
+
+		<?php include('mobile-mediaGallery.php'); ?> <!--FOR MOBILE VIEW ONLY-->
 
 		<div id="featuredOpportunities" class="parallax dark">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="content align-left">
-							<div class="col-md-2 col-md-offset-1">
-					            <div class="logo-inquire">
-					                <img src="public/images/thumbs/queens-chips.png" alt="" title="" />
-					                <p><a class="btn btn-clear" href="#" data-toggle="modal" data-target="#inquireFormModal">Inquire now</a></p>
-					            </div>
-						   	</div>
+							<div class="row">
+								<div class="col-md-2">
+						            <div class="logo-inquire">
+						                 <img src="public/images/thumbs/<?=$brand['logo']?>" alt="<?=$brand['name']?>" title="<?=$brand['name']?>" />
+						                <p><a class="btn btn-clear" href="#" data-toggle="modal" data-target="#inquireFormModal">Inquire now</a></p>
+						            </div>
+							   	</div>
 
-							<div class="col-md-8">
-							
-								<h2>Who we're looking for</h2>
-								<p class="lead">
-									People passionate about Queen's Chips<br />
-									People who want to own their own business/control their own destiny<br />
-									People with strong leadership skills<br />
-									People who will be actively engaged in delivering the PERFECT GUEST EXPERIENCE and restaurant profitability<br />
-									People with a proven track record of success in business<br />
-									People with strong local knowledge and relationships in the community they will do business in								
-								</p>
+								<div class="col-md-10">
 								
+									<h2>Who we're looking for</h2>
+									<ul class="lead">
+										<li>People passionate about <?=$brand['name']?></li>
+										<li>People who want to own their own business/control their own destiny</li>
+										<li>People with strong leadership skills</li>
+										<li>People who will be actively engaged in delivering the PERFECT GUEST EXPERIENCE and restaurant profitability</li>
+										<li>People with a proven track record of success in business</li>
+										<li>People with strong local knowledge and relationships in the community they will do business in</li>
+									</ul>
+									
+								</div>
 							</div>
-
 							
 						</div>
 					</div>
